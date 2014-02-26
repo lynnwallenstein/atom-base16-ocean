@@ -5,6 +5,10 @@
 .list-group,
 .list-tree {
 
+  .selected:before {
+    background-color: @base16-00;
+  }
+
   li:not(.list-nested-item),
   li.list-nested-item > .list-item {
     .text(normal);
