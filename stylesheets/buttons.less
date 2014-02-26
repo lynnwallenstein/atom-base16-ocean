@@ -3,19 +3,18 @@
 
 .btn-background (@color, @hover-color, @selected-color, @text-color) {
   color: @text-color;
-  background-color: transparent;
-  background-image: -webkit-linear-gradient(@color, darken(@color, 5%));
+  background-color: @color;
 
   &:hover {
     color: @text-color-highlight;
-    background-image: -webkit-linear-gradient(@hover-color, darken(@hover-color, 5%));
+    background-color: @hover-color;
   }
   &.selected,
   &.selected:hover {
     color: @text-color-highlight;
-    background-image: -webkit-linear-gradient(darken(@selected-color, 5%), @selected-color);
+    background-color: @selected-color;
     &:hover {
-      background-image: -webkit-linear-gradient(@selected-color, darken(@selected-color, 5%));
+      background-color: @selected-color;
     }
   }
 }
@@ -28,7 +27,10 @@
 }
 
 .btn {
-  .btn-background(@button-background-color, @button-background-color-hover, @button-background-color-selected, @text-color);
+  .btn-background(@button-background-color, @button-background-color-hover, @button-background-color-selected, @button-text-color);
+  font-size: 12px;
+  padding: 0;
+  text-align: center;
 }
 
 .btn.btn-primary {
