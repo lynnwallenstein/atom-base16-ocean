@@ -1,0 +1,11 @@
+{
+  "name": "atom-spacegray",
+  "theme": "ui",
+  "version": "0.1.0",
+  "description": "Spacegray theme for interface components",
+  "license": "MIT",
+  "repository": "https://github.com/lynnwallenstein/atom-spacegray",
+  "engines": {
+    "atom": ">0.40.0"
+  }
+}
