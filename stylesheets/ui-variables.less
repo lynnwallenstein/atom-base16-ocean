@@ -1,9 +1,10 @@
 // Colors
 // ------------------------------------------------------------------
-
 // Base16 - Ocean - http://chriskempson.github.io/base16/#ocean
 
 @base16-gray-dark-ui: #232830;
+@base16-gray-darker-ui: #1C1F26;
+@base16-gray-light-ui: #727A84;
 
 @base16-00: #2B303B; // Dark Gray
 @base16-01: #343D46;
@@ -73,11 +74,11 @@
 @button-background-color-selected: #5c6064;
 @button-border-color: @base-border-color;
 
-@tab-bar-background-color: #222;
+@tab-bar-background-color: @base16-gray-darker-ui;
 @tab-bar-border-color: darken(@tab-background-color-active, 10%);
-@tab-background-color: #333;
-@tab-background-color-active: #222;
-@tab-border-color: #484848;
+@tab-background-color: @base16-gray-darker-ui;
+@tab-background-color-active: @base16-00;
+@tab-border-color: @base16-gray-darker-ui;
 
 @tree-view-background-color: @tool-panel-background-color;
 @tree-view-border-color: @tool-panel-border-color;
@@ -106,4 +107,4 @@
 
 // Other
 
-@font-family: 'Lucida Grande', 'Segoe UI', sans-serif;
+@font-family: 'Source Code Pro', 'Lucida Grande', 'Segoe UI', sans-serif;
