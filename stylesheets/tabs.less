@@ -15,15 +15,14 @@
   padding: 0 13px 0 10px;
 
   &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: @tab-bottom-border-height;
-    left: 0px;
-    width: 100%;
     background-color: @tab-background-color-active;
     border-top: 1px solid @tab-border-color;
-    border-bottom: 1px solid @tab-bar-bottom-border-color;
+    content: "";
+    height: @tab-bottom-border-height;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
   }
 
   .tab {
@@ -36,7 +35,6 @@
     margin-left: 15px;
     border-top-right-radius: @tab-radius;
     box-shadow: inset -1px -1px 1px rgba(0,0,0, .05);
-    -webkit-transform: skewX(@tab-skew);
     transition: color .1s ease-in;
     box-shadow: inset -1px 1px 0 @tab-border-color, 4px 0px 4px rgba(0,0,0,.1);
     border: none;
@@ -55,14 +53,12 @@
       position: absolute;
         top: 0;
         left: -18px;
-      -webkit-transform: skewX(133deg);
       width: 40px;
     }
 
     .close-icon {
       z-index: 3;
       line-height: @tab-height;
-      -webkit-transform: skewX(-@tab-skew);
     }
 
     &.modified:not(:hover) .close-icon {
@@ -70,10 +66,6 @@
       right: 14px;
       width: @modified-icon-width;
       height: @modified-icon-width;
-    }
-
-    .title{
-      -webkit-transform: skewX(-@tab-skew);
     }
 
     &:first-child {
