@@ -20,85 +20,79 @@
     content: "";
     height: @tab-bottom-border-height;
     position: absolute;
-    bottom: 0;
-    left: 0px;
+      bottom: 0;
+      left: 0px;
     width: 100%;
   }
 
   .tab {
-    position: relative;
-    top: @tab-top-padding;
-    height: @tab-height;
-    line-height: @tab-height;
-    color: @text-color;
-    padding-left: 0;
-    margin-left: 15px;
+    border: none;
     border-top-right-radius: @tab-radius;
     box-shadow: inset -1px -1px 1px rgba(0,0,0, .05);
-    transition: color .1s ease-in;
     box-shadow: inset -1px 1px 0 @tab-border-color, 4px 0px 4px rgba(0,0,0,.1);
-    border: none;
+    color: @text-color;
+    height: @tab-height;
+    line-height: @tab-height;
+    margin-left: 15px;
+    padding-left: 10px;
+    position: relative;
+    top: @tab-top-padding;
+    transition: color .1s ease-in;
 
-    &,
-    &:before {
-      background-color: @tab-background-color;
-    }
-
-    &:before {
-      border: none;
-      border-top-left-radius: @tab-radius;
-      box-shadow: inset 1px 1px 0 @tab-border-color, -4px 0px 4px rgba(0,0,0,.1);
-      content: '';
-      height: @tab-height;
-      position: absolute;
-        top: 0;
-        left: -18px;
-      width: 40px;
+    &:first-child {
+      padding-left: 10px;
     }
 
     .close-icon {
-      z-index: 3;
       line-height: @tab-height;
+      z-index: 3;
     }
 
     &.modified:not(:hover) .close-icon {
+      border-color: @base16-09;
+      height: @modified-icon-width;
       top: @tab-height/2 - @modified-icon-width/2 + 1px;
       right: 14px;
       width: @modified-icon-width;
-      height: @modified-icon-width;
     }
 
-    &:first-child {
-      margin-left: 20px;
-    }
-  }
-
-  .tab.active {
-    z-index: 10;
-    line-height: @tab-height - 3px;
-    color: @text-color-highlight;
-    box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
-    border: none;
-
-    .title{
-      position: relative;
-      top: 1px;
+    .title {
+      color: @base16-03;
     }
 
-    .close-icon {
-      line-height: @tab-height - 1px;
-    }
-
-    &, &:before {
+    &.active {
       background-color: @tab-background-color-active;
-      height: @tab-height + 1px;
-    }
-
-    &:before {
       border: none;
-      box-shadow: inset 1px 1px 0 @tab-border-color, -4px -4px 4px rgba(0,0,0,.1);
-    }
-  }
+      box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
+      color: @text-color-highlight;
+      line-height: @tab-height - 3px;
+      z-index: 10;
+
+      .title {
+        color: @base16-07;
+        position: relative;
+          top: 1px;
+      }
+
+      .close-icon {
+        line-height: @tab-height - 1px;
+      }
+
+      &,
+      &:before {
+        background-color: @tab-background-color-active;
+        height: @tab-height + 1px;
+      }
+
+      &:before {
+        border: none;
+        box-shadow: inset 1px 1px 0 @tab-border-color, -4px -4px 4px rgba(0,0,0,.1);
+      }
+
+    } // &.active
+
+  } // .tab
+
 
   .tab:hover {
     color: @text-color-highlight;

@@ -9,13 +9,15 @@
 }
 
 .panes {
+
   .pane {
-    background-color: lighten(@app-background-color, 4%);
+    background-color: lighten(@base16-00, 4%);
 
     &:focus {
-      background-color: @app-background-color;
+      background-color: @base16-00;
     }
-  }
+
+  } // .pane
 
   .pane-row > * {
     border-right: 1px solid @pane-item-border-color;
