@@ -12,9 +12,9 @@ This theme can be activated by going to
 the _Themes_ section in the Settings view (`cmd-,`) and selecting it from the
 _UI Themes_ drop-down menu.
 
-![](https://github.com/lynnwallenstein/atom-spacegray/blob/master/screenshot.png?raw=true)
+![](https://github.com/lynnwallenstein/atom-base16-ocean/blob/master/screenshot.png?raw=true)
 
 [atom]: http://atom.io/
 [base16-ocean-colors]: http://chriskempson.github.io/base16/#ocean
-[base16-ocean-atom]: https://github.com/lynnwallenstein/base16-ocean-dark-theme
+[base16-ocean-atom]: https://github.com/lynnwallenstein/syntax-theme-base16-ocean
 [source-code-pro]: http://www.google.com/fonts/specimen/Source+Code+Pro
