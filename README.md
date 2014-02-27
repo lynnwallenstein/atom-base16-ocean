@@ -8,4 +8,4 @@ _UI Themes_ drop-down menu.
 
 ![](https://github.com/lynnwallenstein/atom-spacegray/blob/master/screenshot.png?raw=true)
 
-[spacegray-sublime][http://kkga.github.io/spacegray/]
+[spacegray-sublime] : http://kkga.github.io/spacegray/
