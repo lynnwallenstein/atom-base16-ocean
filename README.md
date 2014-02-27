@@ -4,6 +4,8 @@ Spacegray UI theme for [Atom][atom]. Based on [amazing Spacegray theme][spacegra
 
 Looks best with [Base16 Ocean][base16-ocean-atom] syntax theme (used in screenshot).
 
+To use check out this repo to your ~/.atom/packages directory and restart atom.
+
 This theme can be activated by going to
 the _Themes_ section in the Settings view (`cmd-,`) and selecting it from the
 _UI Themes_ drop-down menu.
