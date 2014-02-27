@@ -6,4 +6,4 @@ This theme can be activated by going to
 the _Themes_ section in the Settings view (`cmd-,`) and selecting it from the
 _UI Themes_ drop-down menu.
 
-![](NEEDS PICTURE)
+![](https://github.com/lynnwallenstein/atom-spacegray/blob/master/screenshot.png?raw=true)
