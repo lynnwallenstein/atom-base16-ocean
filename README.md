@@ -4,6 +4,8 @@ Spacegray UI theme for [Atom][atom]. Based on [amazing Spacegray theme][spacegra
 
 Looks best with [Base16 Ocean][base16-ocean-atom] syntax theme (used in screenshot).
 
+Font used is [Source Code Pro][source-code-pro]
+
 To use check out this repo to your ~/.atom/packages directory and restart atom.
 
 This theme can be activated by going to
@@ -15,3 +17,4 @@ _UI Themes_ drop-down menu.
 [spacegray-sublime]: http://kkga.github.io/spacegray/
 [atom]: http://atom.io/
 [base16-ocean-atom]: https://github.com/lynnwallenstein/base16-ocean-dark-theme
+[source-code-pro]: http://www.google.com/fonts/specimen/Source+Code+Pro
