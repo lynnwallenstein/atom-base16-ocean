@@ -1,6 +1,6 @@
 # Atom Base 16 Ocean theme
 
-Spacegray UI theme for [Atom][atom]. Inspired by [Chris Kempson's Base 16 Ocean color scheme][http://chriskempson.github.io/base16/#ocean].
+UI theme for [Atom][atom]. Inspired by [Chris Kempson's Base 16 Ocean color scheme][http://chriskempson.github.io/base16/#ocean].
 
 Looks best with [Base16 Ocean][base16-ocean-atom] syntax theme (used in screenshot).
 
