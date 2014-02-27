@@ -1,6 +1,6 @@
-# Atom Spacegray theme
+# Atom Base 16 Ocean theme
 
-Spacegray UI theme for [Atom][atom]. Based on [amazing Spacegray theme][spacegray-sublime] for Sublime.
+Spacegray UI theme for [Atom][atom]. Inspired by [Chris Kempson's Base 16 Ocean color scheme][http://chriskempson.github.io/base16/#ocean].
 
 Looks best with [Base16 Ocean][base16-ocean-atom] syntax theme (used in screenshot).
 
@@ -14,7 +14,7 @@ _UI Themes_ drop-down menu.
 
 ![](https://github.com/lynnwallenstein/atom-spacegray/blob/master/screenshot.png?raw=true)
 
-[spacegray-sublime]: http://kkga.github.io/spacegray/
 [atom]: http://atom.io/
+[base16-ocean-colors]: http://chriskempson.github.io/base16/#ocean
 [base16-ocean-atom]: https://github.com/lynnwallenstein/base16-ocean-dark-theme
 [source-code-pro]: http://www.google.com/fonts/specimen/Source+Code+Pro

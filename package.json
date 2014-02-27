@@ -1,10 +1,10 @@
 {
-  "name": "atom-spacegray",
+  "name": "atom-base16-ocean",
   "theme": "ui",
   "version": "0.1.0",
-  "description": "Spacegray theme for interface components",
+  "description": "Base 16 Ocean theme for interface components",
   "license": "MIT",
-  "repository": "https://github.com/lynnwallenstein/atom-spacegray",
+  "repository": "https://github.com/lynnwallenstein/atom-base16-ocean",
   "engines": {
     "atom": ">0.40.0"
   }
