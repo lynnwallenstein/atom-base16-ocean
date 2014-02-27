@@ -1,20 +1,32 @@
+// ------------------------------------------------------------------
+// Buttons
+// ------------------------------------------------------------------
+
+// Mixins
+// ------------------------------------------------------------------
+
 .btn-background (@color, @hover-color, @selected-color, @text-color) {
-  color: @text-color;
   background-color: @color;
+  color: @text-color;
 
   &:hover {
-    color: @text-color-highlight;
     background-color: @hover-color;
+    color: @text-color-highlight;
   }
+
   &.selected,
   &.selected:hover {
-    color: @text-color-highlight;
     background-color: @selected-color;
+    color: @text-color-highlight;
+
     &:hover {
       background-color: @selected-color;
     }
-  }
-}
+
+  } // .  &.selected,
+
+} // .btn-background (@color, @hover-color, @selected-color, @text-color) {
+
 
 .btn-variant (@color) {
   @bg: darken(@color, 10%);
@@ -22,6 +34,10 @@
   @selected: @color;
   .btn-background(@bg, @hover, @selected, @text-color-highlight);
 }
+
+// Styles
+// ------------------------------------------------------------------
+
 
 .btn {
   .btn-background(@button-background-color, @button-background-color-hover, @button-background-color-selected, @button-text-color);
