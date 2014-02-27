@@ -73,8 +73,12 @@
 
   li.selected {
     background-color: @background-color-selected;
-    &:before{ display: none; }
-  }
+
+    &:before {
+      display: none;
+    }
+
+  } // li.selected {
 
   &.mark-active{
     @active-icon-size: 14px;
@@ -91,25 +95,32 @@
       height: @active-icon-size;
       width: @active-icon-size;
     }
+
     > li:not(.active):before {
       margin-right: @component-icon-padding;
     }
+
     li.active {
+
       .octicon(check, @active-icon-size);
+
       &:before {
         margin-right: @component-icon-padding;
         color: @text-color-success;
       }
-    }
-  }
-}
+
+    } // li.active {
+
+  } // &.mark-active{
+
+} // .select-list ol.list-group,
 
 .select-list.popover-list {
   background-color: @overlay-background-color;
+  border: 1px solid @overlay-border-color;
+  border-radius: @component-border-radius;
   box-shadow: 0 0 10px @base-border-color;
   padding: @component-padding/2;
-  border-radius: @component-border-radius;
-  border: 1px solid @overlay-border-color;
 
   .editor {
     margin-bottom: @component-padding/2;
@@ -118,27 +129,32 @@
   .list-group li {
     padding-left: @component-padding/2;
   }
-}
+
+} // .select-list.popover-list {
 
 .ui-sortable {
+
   li {
     line-height: 2.5;
-  }
 
-  // For sortable lists in the settings view
-  li.ui-sortable-placeholder {
-    visibility: visible !important;
-    background-color: darken(@pane-item-background-color, 10%);
-  }
-}
+    // For sortable lists in the settings view
+    &.ui-sortable-placeholder {
+      background-color: darken(@pane-item-background-color, 10%);
+      visibility: visible !important;
+    }
 
-li.ui-draggable-dragging, li.ui-sortable-helper {
-  line-height: @component-line-height;
-  height: @component-line-height;
+  } // li
+
+} // .ui-sortable {
+
+li.ui-draggable-dragging,
+li.ui-sortable-helper {
+  background: @background-color-highlight;
   border: 0;
   border-radius: 0;
+  box-shadow: 0 0 1px @base-border-color;
+  height: @component-line-height;
+  line-height: @component-line-height;
   list-style: none;
   padding: 0 @component-padding;
-  background: @background-color-highlight;
-  box-shadow: 0 0 1px @base-border-color;
 }
