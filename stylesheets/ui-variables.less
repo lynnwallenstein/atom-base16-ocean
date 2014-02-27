@@ -23,15 +23,17 @@
 @base16-0E: #B48EAD; // Pinkish Purple
 @base16-0F: #AB7967;
 
+@white: #fff;
+
 @text-color: @base16-02;
 @text-color-subtle: @base16-01;
-@text-color-highlight: #fff;
+@text-color-highlight: @white;
 @text-color-selected: @text-color-highlight;
 
-@text-color-info: #5293d8;
+@text-color-info: @base16-0D;
 @text-color-success: @base16-0B;
 @text-color-warning: @base16-0A;
-@text-color-error: #c00;
+@text-color-error: @base16-08;
 
 @text-color-ignored: @text-color-subtle;
 @text-color-added: @text-color-success;
@@ -40,13 +42,13 @@
 @text-color-removed: @text-color-error;
 
 @background-color-info: @base16-0D;
-@background-color-success: #17ca65;
-@background-color-warning: #ffaa2c;
-@background-color-error: #c00;
+@background-color-success: @base16-0B;
+@background-color-warning: @base16-09;
+@background-color-error: @base16-08;
 @background-color-highlight: rgba(255, 255, 255, 0.07);
 @background-color-selected: @base16-0D;
 
-@app-background-color: #333;
+@app-background-color: @base16-00;
 
 @base-background-color: lighten(@tool-panel-background-color, 5%);
 @base-border-color: rgba(0, 0, 0, 0.5);
@@ -61,13 +63,13 @@
 @tool-panel-background-color: @base16-gray-darker-ui;
 @tool-panel-border-color: @base-border-color;
 
-@inset-panel-background-color: #161719;
+@inset-panel-background-color: @base16-gray-darker-ui;
 @inset-panel-border-color: @base-border-color;
 
 @panel-heading-background-color: @base16-01;
 @panel-heading-text-color: @base16-04;
 
-@overlay-background-color: #202123;
+@overlay-background-color: @base16-gray-darker-ui;
 @overlay-border-color: @background-color-highlight;
 
 @button-background-color: @base16-00;
@@ -88,8 +90,8 @@
 @ui-site-color-1: @background-color-success; // green
 @ui-site-color-2: @background-color-info; // blue
 @ui-site-color-3: @background-color-warning; // orange
-@ui-site-color-4: #db2ff4; // purple
-@ui-site-color-5: #f5e11d; // yellow
+@ui-site-color-4: @base16-0E; // purple
+@ui-site-color-5: @base16-0A; // yellow
 
 
 // Sizes
