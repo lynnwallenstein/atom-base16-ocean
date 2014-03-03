@@ -1,4 +1,4 @@
-# Atom Base 16 Ocean theme
+# Atom Base16 Ocean theme
 
 UI theme for [Atom][atom]. Inspired by [Chris Kempson's Base 16 Ocean color scheme][http://chriskempson.github.io/base16/#ocean].
 

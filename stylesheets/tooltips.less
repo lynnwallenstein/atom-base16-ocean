@@ -4,13 +4,13 @@
 
 .tooltip {
   @tip-background-color: @white;
-  @tip-text-color: #333;
+  @tip-text-color: @base16-00;
   white-space: nowrap;
 
   .keystroke {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 13px;
-    color: #777;
+    color: @base16-gray-light-ui;
     padding-left: 2px;
   }
 
@@ -19,12 +19,12 @@
   }
 
   .tooltip-inner {
-    line-height: 19px;
-    border-radius: @component-border-radius;
     background-color: @tip-background-color;
+    border-radius: @component-border-radius;
     color: @tip-text-color;
-    white-space: nowrap;
+    line-height: 19px;
     max-width: none;
+    white-space: nowrap;
   }
 
   &.top .tooltip-arrow {
@@ -59,4 +59,4 @@
     border-bottom-color: @tip-background-color;
   }
 
-}
+} // .tooltip
