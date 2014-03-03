@@ -3,11 +3,13 @@
 // ------------------------------------------------------------------
 
 .panel {
+
   &.bordered {
     border: 1px solid @base-border-color;
     border-radius: @component-border-radius;
   }
-}
+
+} // .panel
 
 .tool-panel {
   .text(normal);
@@ -22,22 +24,16 @@
   &.panel-left {
     border-right: 1px solid @tool-panel-border-color;
   }
-}
+
+} // .tool-panel {
 
 .inset-panel {
   position: relative;
   background-color: @inset-panel-background-color;
 }
 
-.is-blurred {
-  .tool-panel,
-  .inset-panel {
-  }
-}
-
 .panel-heading {
   .text(normal);
-
   background-color: @panel-heading-background-color;
   color: @panel-heading-text-color;
 

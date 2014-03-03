@@ -1,12 +1,14 @@
-@import "ui-mixins";
-@import "ui-variables";
-@import "buttons";
+// ------------------------------------------------------------------
+// Panes
+// ------------------------------------------------------------------
 
 .pane-item {
+
   .panel {
     border-color: fadeout(@inset-panel-border-color, 30%);
   }
-}
+
+} // .panel-item
 
 .panes {
 
@@ -21,11 +23,20 @@
 
   .pane-row > * {
     border-right: 1px solid @pane-item-border-color;
-    &:last-child { border-right: none; }
-  }
+
+    &:last-child {
+      border-right: none;
+    }
+
+  } // .pane-row > * {
 
   .pane-column > * {
     border-bottom: 1px solid @pane-item-border-color;
-    &:last-child { border-bottom: none; }
-  }
-}
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+  } // .pane-column > * {
+
+} // .panes {

@@ -1,5 +1,6 @@
-@import "ui-mixins";
-@import "ui-variables";
+// ------------------------------------------------------------------
+// Text
+// ------------------------------------------------------------------
 
 h1,
 h2,
@@ -7,9 +8,18 @@ h3 {
   line-height: 1em;
   margin-bottom: 15px
 }
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.2em; }
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
 
 p {
   line-height: 1.6;
@@ -35,26 +45,52 @@ code {
   border-radius: @component-border-radius;
 }
 
-.selected { .text(highlight); }
+.selected {
+  .text(highlight);
+}
 
-.text-smaller { font-size: 0.9em; }
+.text-smaller {
+  font-size: 0.9em;
+}
 
-.text-subtle { .text(subtle); }
-.text-highlight { .text(highlight); }
+.text-subtle {
+  .text(subtle);
+}
 
-.text-error { .text(error); }
+.text-highlight {
+  .text(highlight);
+}
+
+.text-error {
+  .text(error);
+}
+
 .text-info {
   .text(info);
-  &:hover { color: @text-color-info; }
-}
+
+  &:hover {
+    color: @text-color-info;
+  }
+
+} // .text-info {
+
 .text-warning {
   .text(warning);
-  &:hover { color: @text-color-warning; }
-}
+
+  &:hover {
+    color: @text-color-warning;
+  }
+
+} // .text-warning {
+
 .text-success {
   .text(success);
-  &:hover { color: @text-color-success; }
-}
+
+  &:hover {
+    color: @text-color-success;
+  }
+
+} // .text-success {
 
 .highlight {
   color: @text-color-highlight;
@@ -66,6 +102,7 @@ code {
 }
 
 .highlight-color(@name, @color, @text-color) {
+
   .highlight-@{name} {
     border: 1px solid @color;
     border-radius: @component-border-radius;
@@ -73,7 +110,9 @@ code {
     padding: 1px 3px;
     text-shadow: none;
   }
-}
+
+} // .highlight-color(@name, @color, @text-color) {
+
 .highlight-color(info, @background-color-info, @text-color-info);
 .highlight-color(warning, @background-color-warning, @text-color-warning);
 .highlight-color(error, @background-color-error, @text-color-error);
