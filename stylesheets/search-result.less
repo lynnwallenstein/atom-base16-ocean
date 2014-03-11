@@ -17,6 +17,19 @@
 
 .search-result {
 
+  &.list-item.selected {
+
+    &:before {
+      background-color: @base16-03;
+    }
+
+    .highlight-info {
+      border-color: @base16-0A;
+      color: @base16-0A;
+    }
+
+  } // &.list-item
+
   .preview {
     color: @base16-06;
   }
