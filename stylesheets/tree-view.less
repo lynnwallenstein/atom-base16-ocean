@@ -21,12 +21,16 @@
 
   &:focus {
 
-    .selected > .name,
-    .selected > .name:before,
-    .selected > .list-item > .name,
-    .selected > .list-item > .name:before {
-      color: @white !important;
-    }
+    .selected > {
+
+      .name,
+      .name:before,
+      .list-item > .name,
+      .list-item > .name:before {
+        color: @white !important;
+      }
+
+    } // .selected >
 
   } // &:focus
 
