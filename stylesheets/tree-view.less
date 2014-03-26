@@ -21,16 +21,27 @@
 
   &:focus {
 
-    .selected > {
+    .selected {
 
-      .name,
-      .name:before,
-      .list-item > .name,
-      .list-item > .name:before {
-        color: @white !important;
+      > .name,
+      > .name:before,
+      > .list-item > .name,
+      > .list-item > .name:before {
+        color: @white;
       }
 
     } // .selected >
+
+    .status-modified {
+
+      > .name,
+      > .name:before,
+      > .list-item > .name,
+      > .list-item > .name:before {
+        .text(warning) !important;
+      }
+
+    }
 
   } // &:focus
 
